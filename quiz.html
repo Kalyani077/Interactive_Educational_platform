@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Interactive Educational Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="index.html#progress">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Test Your Knowledge</h2>
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. What is the capital of France?</p>
+                    <input type="radio" name="q1" value="Paris"> Paris<br>
+                    <input type="radio" name="q1" value="London"> London<br>
+                    <input type="radio" name="q1" value="Rome"> Rome<br>
+                </div>
+                <div class="question">
+                    <p>2. What is 2 + 2?</p>
+                    <input type="radio" name="q2" value="3"> 3<br>
+                    <input type="radio" name="q2" value="4"> 4<br>
+                    <input type="radio" name="q2" value="5"> 5<br>
+                </div>
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Interactive Educational Platform</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
